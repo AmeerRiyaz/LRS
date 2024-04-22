@@ -1,0 +1,17 @@
+{
+  "name": "LRS_chaincode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "fabric-chaincode-node start"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": ">=5"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.5.4",
+    "fabric-shim": "^2.5.4",
+    "tar": "^6.1.15"
+  }
+}
