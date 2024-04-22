@@ -179,12 +179,13 @@ class LRSContract extends Contract {
                         Pan: args[9],
                         Aadhaar: args[10]
                     }
-                ],
-                uniquePropertyId: args[11]
+                ]
+               
 
             }
 
             console.log("data", data)
+            let uniquePropertyId = args[11]
 
             // console.log("data", encumbrancedata)
             await ctx.stub.putState(args[11], Buffer.from(JSON.stringify(data)));
